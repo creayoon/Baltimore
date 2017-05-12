@@ -24,7 +24,10 @@ module.exports = {
                 exclude: /node_modules/,
                 query: {
                     cacheDirectory: true,
-                    presets: ['es2015', 'stage-0', 'react']
+                    presets: ['es2015', 'stage-0', 'react'] 
+                    // for react, livereload view
+                    // presets: ['es2015', {'modules': false}] 
+                    // not react, not livereload view
                 }
             }
         ]
